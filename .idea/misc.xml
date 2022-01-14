@@ -5,9 +5,11 @@
       <map>
         <entry key="..\:/V/Android/Pribadi/SuitmediaTest/app/src/main/res/drawable/btn_draw_theme.xml" value="0.20555555555555555" />
         <entry key="..\:/V/Android/Pribadi/SuitmediaTest/app/src/main/res/drawable/edittext_rounded.xml" value="0.22" />
+        <entry key="..\:/V/Android/Pribadi/SuitmediaTest/app/src/main/res/drawable/ic_back_ios_24.xml" value="0.20555555555555555" />
         <entry key="..\:/V/Android/Pribadi/SuitmediaTest/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20925925925925926" />
         <entry key="..\:/V/Android/Pribadi/SuitmediaTest/app/src/main/res/layout/activity_first.xml" value="0.2" />
         <entry key="..\:/V/Android/Pribadi/SuitmediaTest/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/V/Android/Pribadi/SuitmediaTest/app/src/main/res/layout/activity_second.xml" value="0.23789764868603042" />
       </map>
     </option>
   </component>

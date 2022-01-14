@@ -11,6 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SuitmediaTest">
         <activity
+            android:name=".ui.secondscreen.SecondActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SuitmediaTest.NoActionBar"/>
+        <activity
             android:name=".ui.firstscreen.FirstActivity"
             android:exported="true"
             android:theme="@style/Theme.SuitmediaTest.FirstScreen">
