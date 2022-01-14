@@ -3,10 +3,22 @@ package com.verindrarizya.suitmediatest.ui.firstscreen
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.verindrarizya.suitmediatest.R
+import com.verindrarizya.suitmediatest.databinding.ActivityFirstBinding
 
 class FirstActivity : AppCompatActivity() {
+
+    private val binding: ActivityFirstBinding by lazy {
+        ActivityFirstBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_first)
+        setContentView(binding.root)
+
+        initConfigActionBar()
+    }
+
+    private fun initConfigActionBar() {
+        supportActionBar?.hide()
     }
 }
