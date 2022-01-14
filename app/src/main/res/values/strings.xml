@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SuitmediaTest</string>
+    <string name="palindrome">It is Palindrome</string>
+    <string name="not_palindrome">Not Palindrome</string>
 </resources>

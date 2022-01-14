@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.139" />
 
     <EditText
         android:id="@+id/edt_name"
@@ -32,7 +32,9 @@
         android:layout_marginTop="30dp"
         android:padding="10dp"
         android:background="@drawable/edittext_rounded"
-        android:hint="Name"/>
+        android:hint="Name"
+        android:inputType="text"
+        android:maxLines="1"/>
 
     <EditText
         android:id="@+id/edt_palindrome"
@@ -46,7 +48,9 @@
         android:layout_marginTop="16dp"
         android:padding="10dp"
         android:background="@drawable/edittext_rounded"
-        android:hint="Palindrome" />
+        android:hint="Palindrome"
+        android:inputType="text"
+        android:maxLines="1"/>
 
     <Button
         android:id="@+id/btn_check"
