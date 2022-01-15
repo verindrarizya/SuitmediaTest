@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.viewModels
 import com.verindrarizya.suitmediatest.R
 import com.verindrarizya.suitmediatest.databinding.ActivityFirstBinding
@@ -38,14 +39,20 @@ class FirstActivity : AppCompatActivity() {
             val text = binding.edtPalindrome.text.toString()
             if (text.isNotEmpty()) {
                 viewModel.checkPalindrome(text)
+            } else {
+                showToast(getString(R.string.palindrome_warning))
             }
         }
 
         binding.btnNext.setOnClickListener {
             val username = binding.edtName.text.toString()
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra(SecondActivity.USERNAME_EXTRA, username)
-            startActivity(intent)
+            if (username.isNotEmpty()) {
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra(SecondActivity.USERNAME_EXTRA, username)
+                startActivity(intent)
+            } else {
+               showToast(getString(R.string.name_warning))
+            }
         }
     }
 
@@ -66,6 +73,10 @@ class FirstActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun showToast(text: String) {
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
 
     companion object{

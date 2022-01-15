@@ -5,4 +5,6 @@
     <string name="selected_user_name">Selected User Name</string>
     <string name="error_statement">Error, Please refresh</string>
     <string name="empty_user_stament">Users is empty</string>
+    <string name="palindrome_warning">Palindrome field cannot be empty</string>
+    <string name="name_warning">Name field cannot be empty</string>
 </resources>
