@@ -3,4 +3,6 @@
     <string name="palindrome">It is Palindrome</string>
     <string name="not_palindrome">Not Palindrome</string>
     <string name="selected_user_name">Selected User Name</string>
+    <string name="error_statement">Error, Please refresh</string>
+    <string name="empty_user_stament">Users is empty</string>
 </resources>

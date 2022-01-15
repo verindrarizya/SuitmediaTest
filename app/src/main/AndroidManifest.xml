@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.verindrarizya.suitmediatest">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".SuitmediaApplication"
         android:allowBackup="true"
@@ -11,9 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SuitmediaTest">
         <activity
-            android:name=".ui.secondscreen.SecondActivity"
+            android:name=".ui.thirdscreen.ThirdActivity"
             android:exported="false"
             android:theme="@style/Theme.SuitmediaTest.NoActionBar"/>
+        <activity
+            android:name=".ui.secondscreen.SecondActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SuitmediaTest.NoActionBar" />
         <activity
             android:name=".ui.firstscreen.FirstActivity"
             android:exported="true"
